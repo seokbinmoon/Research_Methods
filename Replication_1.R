@@ -47,7 +47,7 @@ df_final <- df_clean %>%
                   Profit, Size, Volatility, AbEarn,
                   TaxCredit, LCF), winsorize))
 
-summary_table <- df_clean %>%
+summary_table <- df_final %>%
   select(BookLev, MktLev, MB, FixedAsset,
          Profit, Size, Volatility, AbEarn,
          TaxCredit, LCF, Rating, Rated, InvGrade) %>%
